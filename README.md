@@ -22,6 +22,9 @@ Integritas Data Blockchain: Setiap data yang tercatat. Teknologi blockchain digu
 Pencatatan Data Andal: Seluruh riwayat data sensor disimpan secara efisien di InfluxDB, sebuah database yang dirancang khusus untuk data deret waktu (time-series).
 
 
+![image](https://github.com/user-attachments/assets/7801892f-1fcc-4299-9ad8-dc28efbf627f)
+
+
 🚀 Tumpukan Teknologi (Tech Stack)
 
 Backend (Modbus Client): Rust dengan Tokio sebagai runtime asinkron. Dipilih karena performanya yang luar biasa, keamanan memori, dan kemampuannya menangani I/O secara efisien.
@@ -31,6 +34,8 @@ Aplikasi Desktop (GUI): Python dengan Tkinter untuk antarmuka yang simpel dan Ma
 Database: InfluxDB sebagai gudang utama untuk semua data sensor suhu dan kelembapan.
 
 Keamanan Data: Implementasi Blockchain untuk memastikan jejak data yang tidak bisa diubah (immutable).
+
+![image](https://github.com/user-attachments/assets/3d4aa935-3cff-434f-834d-8e74ab2c7084)
 
 
 ⚙️ Bagaimana Cara Kerjanya?
@@ -42,4 +47,5 @@ Pengiriman ke Server: Data yang telah dibaca kemudian dikirimkan ke server pusat
 Penyimpanan & Verifikasi: Server menyimpan data mentah ke InfluxDB. Secara bersamaan, hash dari data tersebut dicatatkan ke dalam blockchain untuk verifikasi di kemudian hari.
 
 Visualisasi & Kontrol: Pengguna dapat mengakses dashboard web untuk melihat grafik real-time, menganalisis data historis, dan mengirim perintah kembali ke sistem.
+
 
